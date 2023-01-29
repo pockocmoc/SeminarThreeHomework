@@ -12,9 +12,11 @@ public class Main {
         int x = NumberEntry.numberEntry();
         System.out.println("Введите координату точки Y: ");
         int y = NumberEntry.numberEntry();
+        System.out.println("Введите размер карты M: ");
+        int m = NumberEntry.numberEntry();
         System.out.println("Введите размер карты N: ");
         int n = NumberEntry.numberEntry();
-        int result = Solution.countPaths(x, y, n);
+        int result = Solution.countPaths(x, y, m, n);
         System.out.println("Количество маршрутов равно: ");
         System.out.println(result);
     }
